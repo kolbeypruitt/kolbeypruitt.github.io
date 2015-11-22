@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="guitars">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-route.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-beta.1/angular-animate.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="./js/PortfolioApp.js"></script>
+    <script src="./js/MainControllers.js"></script>
+  <script type="text/javascript">
+
+    angular.module('guitars', ['ngRoute'])
+      .controller('HomeController', function(){
+        
+      })
+      .controller('GuitarController', function($http,$scope){
+        $http.get('/api/v1/guitars').then(function (response) {
+          $scope.guitars = response.data
+        })
+        
+      })
+      .config(function ($routeProvider,$locationProvider) {
+        $routeProvider.when('/', {
+          templateUrl: '/partials/home.html',
+          controller: 'HomeController'
+        })
+        .when('/guitars', {
+          templateUrl: '/partials/guitars.html',
+          controller: 'GuitarController'
+        })
+        .otherwise('/guitars')
+        $locationProvider.html5Mode(true)
+      })
+  </script>
+</head>
+<base href="/">
+<body>
+  <nav>
+   <a href="/">Home</a>
+   |
+   <a href="/guitars">Guitars</a>
+  </nav>
+  <ng-view></ng-view>
+</body>
+</html>
