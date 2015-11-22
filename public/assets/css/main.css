@@ -8,7 +8,7 @@ body
 {
 	font-family: 'Roboto', 'Open-Sans', sans-serif;
 	overflow-x: hidden;
-	color: #313131;
+	color: #6FA2FF;
 }
 .black{
 	color: #313131;
@@ -53,20 +53,20 @@ body
 ==================================================*/
 .header
 {
-	background: url('../images/cover-page.jpg');
+	background: url('../images/mesa.jpg');
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
 	background-attachment: fixed;
 	height: 100vh;
-	color: #fff;
+	color: ;
 	text-transform: uppercase;
 
 }
 			/*navbar*/
 .navbar-default .navbar-brand{
-	border: 1px solid #fff;
-	color: #fff;
+	border: 1px solid #00000;
+	color: #00000;
 	font-size: 30px;
 	padding: 10px 20px;
 	height: auto;
@@ -74,7 +74,7 @@ body
 	letter-spacing: 5px;
 }
 .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover{
-	color: #fff;
+	color: #6FA2FF;
 }
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #FFF;
@@ -91,7 +91,7 @@ body
     padding-top: 50px;
 }
 .navbar-default .navbar-nav>li>a{
-	color: #fff;
+	color: #00000;
     /*text-transform: uppercase;*/
     padding-right: 20px;
     padding-left: 20px;
@@ -104,11 +104,11 @@ body
 	border-radius: 0px;
 }
 .navbar-default .navbar-nav>li>a:hover{
-	border: 1px solid rgba(255, 255, 255, 0.6);
+	border: 1px solid black;
 	color: #fff;
 }
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
-	color: #fff;
+	color: #6FA2FF;
 }
 .navbar-nav>li>a {
     padding-top: 8px;
@@ -119,8 +119,8 @@ body
 }
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
     background-color: transparent;
-    border: 1px solid rgba(255, 255, 255, 0.6);
-    color: #fff;
+    border: 1px solid black;
+    color: #00000;
 }
 		/*Home*/
 .header-wrapper{
@@ -143,6 +143,7 @@ body
 	font-size: 20px;
 	letter-spacing: 3px;
 }
+
 /*=================================================
 ||				4. Our Service
 ==================================================*/
@@ -386,14 +387,14 @@ a .rss:hover{
 ||				11. Others
 ==================================================*/
 /*Testimonial*/
-.testimonial{
+.contact{
 	background: url('../images/testimonial.png');
 	color: #fff;
 }
-.testimonial .section-title{
+.contact .section-title{
 	color: #fff;
 }
-.testimonial-detail{
+.contact-detail{
 	font-style: italic;
 	font-size: 15px;
 	font-weight: 200;
