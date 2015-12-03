@@ -21,6 +21,7 @@
       <link rel="stylesheet" href="assets/css/contact.css">
       <link rel="stylesheet" href="assets/css/service.css">
       <link rel="stylesheet" href="assets/css/one-page-style.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
       <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -40,7 +41,7 @@
           <script src="assets/js/selectivizr.js"></script>
         <![endif]-->
   </head>
-<body data-spy="scroll" data-target="#bs-example-navbar-collapse-1">
+<body ng-app="Portfolio" data-spy="scroll" data-target="#bs-example-navbar-collapse-1">
 
 <!-- Home -->
   <section class="header" id="header">
@@ -343,14 +344,14 @@
                       Frederick CO, USA
                   </p>
               </div>
-              <div class="col-md-4 contact-item col-sm-6 col-xs-12">
+              <div href="tel:9182901127" class="col-md-4 contact-item col-sm-6 col-xs-12">
                   <i class="ion-ios-telephone"></i>
                   <h3>Phone</h3>
                   <p class="contact"><br>
-                      Mobile: 918-290-1127
+                    Mobile: 918-290-1127
                   </p>
               </div>
-              <div class="col-md-4 contact-item col-sm-6 col-xs-12">
+              <div href="mailto:kolbeypruitt@gmail.com" class="col-md-4 contact-item col-sm-6 col-xs-12">
                   <i class="ion-ios-email"></i>
                   <h3>Email Address</h3>
                   <p class="contact">
@@ -360,25 +361,26 @@
               </div>
 
 
+
           </div> <!-- /.row -->
-          <form class="row form">
+          <form ng-submit="sendMail()" class="row form">
                 <h3>Leave A Message</h3>
                 <div class="col-sm-4 col-xs-12 form-group">
                     <label class="sr-only">Name</label>
-                    <input name="name" class="form-control" type="text" placeholder="First Name">
+                    <input ng-model="mail.name" name="name" class="form-control" type="text" placeholder="First Name">
                 </div> <!-- /.form-group -->
                 <div class="col-sm-4 col-xs-12 form-group">
                     <label class="sr-only">Email</label>
-                    <input name="email" class="form-control" type="email" placeholder="Email address">
+                    <input ng-model="mail.email" name="email" class="form-control" type="email" placeholder="Email address">
                 </div> <!-- /.form-group -->
                 <div class="col-sm-4 col-xs-12 form-group">
                     <label class="sr-only">Website</label>
-                    <input name="website" class="form-control" type="text" placeholder="Your website">
+                    <input ng-model="mail.website" name="website" class="form-control" type="text" placeholder="Your website">
                 </div> <!-- /.form-group -->
                 <div class="row">
                     <div class="col-md-12 col-xs-12 form-group">
                         <label class="sr-only">Message</label>
-                        <textarea class="message form-control" placeholder="Write message"></textarea>
+                        <textarea ng-model="mail.message" class="message form-control" placeholder="Write message"></textarea>
                     </div> <!-- /.form-group -->
                     <input class="btn btn-sub" type="submit" value="Send Message">
                 </div>
