@@ -51,17 +51,28 @@ body
 /*=================================================
 ||				3. Header
 ==================================================*/
-.header
-{
-	background: url('../images/mesa.jpg');
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: cover;
-	background-attachment: fixed;
-	height: 100vh;
-	color: ;
-	text-transform: uppercase;
 
+@media (min-width: 1200px) 
+{
+	.header
+	{
+		background: url('../images/mesa.jpg');
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+		background-attachment: fixed;
+		height: 100vh;
+		color: ;
+		text-transform: uppercase;
+
+	}
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),(min-resolution: 192dpi),(max-width: 600px) {
+  .header {
+		background: url('../images/mesa.jpg');
+    background-size:500px 400px; /* This replicates the original standard sprite dimensions, and assumes the actual dimensions of sprite@2x.png are 1000x1000px 
+  }
 }
 
 			/*navbar*/
