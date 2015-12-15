@@ -68,10 +68,13 @@ body
 	}
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2),(min-resolution: 192dpi),(max-width: 600px) {
+@media only screen and (max-width: 800px) {
   .header {
+  	background-position: center center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
 		background: url('../images/mesa.jpg');
-    background-size:500px 400px; /* This replicates the original standard sprite dimensions, and assumes the actual dimensions of sprite@2x.png are 1000x1000px 
+    background-size:1200px 800px;
   }
 }
 
