@@ -1,0 +1,130 @@
+h1 {
+  text-align: center;
+  color: white;
+  margin: 0px 0px;
+}
+
+body {
+  z-index: -50;
+  background-image: url("http://wallpapercave.com/wp/afyhOaU.jpg");
+  background-size: 1200px 700px;
+  background-attachment: fixed;
+  no-repeat fixed top left;
+}
+
+label {
+  color: white;
+}
+
+#color_input {
+  width: 1px;
+  height: 1px;
+  visibility: hidden;
+}
+
+.container {
+  display: block;
+  margin: 0px auto;
+  width: 100%;
+  padding: 0;
+}
+
+#label {
+  font-size: 14px;
+  position: absolute;
+  top: 5px;
+  left: 42%;
+  color: white;
+}
+
+#color_input:focus {
+  outline: none;
+}
+
+#container {
+  display: inline-block;
+  text-align: center
+}
+
+.button {
+  position: relative;
+  background-color: black;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 15px;
+  margin: 6px 6px;
+  color: white;
+  visibility: hidden;
+  }
+
+.button:hover {
+  cursor: pointer;
+}
+
+.colorPickerWrapper div {
+  display: inline-block;
+  width: 46%;
+}
+
+section.border button {
+  color: white;
+  background: rgba(0,0,0,0);
+  border: solid 5px white;
+  margin-top: 15px;
+}
+
+section.border button:hover,
+section.border button.hover {
+  border-color: black;
+  color: black;
+}
+
+section.border button:active,
+section.border button.active {
+  border-color: #27496d;
+  color: #27496d;
+}
+
+.controls {
+  border-radius: 15px;
+  background-color: grey;
+  opacity: 0.8;
+  width: 50%;
+  margin: 10px auto;
+  display: block;
+  padding: 8px;
+  z-index: 400;
+}
+
+.grid_size {
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+  height: 1px;
+}
+
+#grid {
+  width: auto;
+  display: inline-block;
+  border: 3px solid grey;
+  background: black;
+  margin: 0px auto;
+  visibility: hidden;
+}
+
+div.row:after {
+  content: ".";
+  height: 0;
+  visibility: hidden;
+  display: block;
+  clear: both;
+}
+
+/*this is cells*/
+div.row div {
+  background-color: transparent;
+  border: 1px solid grey;
+  float: left;
+  width: 10px;
+  height: 10px;
+}
