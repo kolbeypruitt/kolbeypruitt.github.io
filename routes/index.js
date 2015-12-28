@@ -10,7 +10,7 @@ var router = express.Router();
 // });
 
 router.get('/gol', function (req, res) {
-  res.render('gol');
+  res.render('gol.jade');
 })
 
 router.get('*', function(req, res, next) {
