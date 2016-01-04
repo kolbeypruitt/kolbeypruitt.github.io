@@ -9,9 +9,10 @@ var router = express.Router();
 //   ]);
 // });
 
-router.get('/gol', function (req, res) {
+router.get('/gol', function (req, res, next) {
+  console.log("hit router");
   res.render('gol.jade');
-})
+});
 
 router.get('*', function(req, res, next) {
   res.sendFile('index.html', {
