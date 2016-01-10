@@ -1,1 +1,16 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 104.74 131.47"><defs><style>.cls-1{fill:none;stroke:#7b7b7b;stroke-miterlimit:10;stroke-width:20px;}</style></defs><title>kp_site_logo</title><circle class="cls-1" cx="69.52" cy="71.2" r="25.22"/><path class="cls-1" d="M72.19,152.82c-0.19-42.71,0-18.36.14-60.41" transform="translate(-28.05 -21.39)"/><path class="cls-1" d="M38.91,14.39" transform="translate(-28.05 -21.39)"/><path class="cls-1" d="M38.91,115.4" transform="translate(-28.05 -21.39)"/><path class="cls-1" d="M72.19,21.39A34.14,34.14,0,0,1,38.05,55.53" transform="translate(-28.05 -21.39)"/><path class="cls-1" d="M72.19,94.7A34.14,34.14,0,0,0,38.05,60.56" transform="translate(-28.05 -21.39)"/><line class="cls-1" x1="10" x2="10" y2="101.01"/></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 104.7 131.5" style="enable-background:new 0 0 104.7 131.5;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#FFFFFF;stroke-width:20;stroke-miterlimit:10;}
+</style>
+<title>kp_site_logo</title>
+<circle class="st0" cx="69.5" cy="71.2" r="25.2"/>
+<path class="st0" d="M44.1,131.4c-0.2-42.7,0-18.4,0.1-60.4"/>
+<path class="st0" d="M10.9-7"/>
+<path class="st0" d="M10.9,94"/>
+<path class="st0" d="M44.1,0c0,18.9-15.3,34.1-34.1,34.1h0"/>
+<path class="st0" d="M44.1,73.3c0-18.9-15.3-34.1-34.1-34.1l0,0"/>
+<line class="st0" x1="10" y1="0" x2="10" y2="101"/>
+</svg>
