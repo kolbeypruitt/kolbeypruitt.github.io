@@ -75,3 +75,8 @@ input[type="username"]:focus, input[type="email"]:focus, input[type="text"]:focu
 input.form-control, .message {
     border-radius: 0px;
 }
+
+img#resume-dowload {
+  width: 125px;
+  height: auto;
+}
