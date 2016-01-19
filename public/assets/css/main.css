@@ -4,9 +4,10 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:200,400,700);
 @import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
 
-body
+html, body
 {
 	font-family: 'Roboto', 'Open-Sans', sans-serif;
+	max-width: 100%;
 	overflow-x: hidden;
 	color: #6FA2FF;
 }
@@ -68,13 +69,25 @@ body
 .header-logo {
 	width: 250px;
 	height: auto;
+	fill:none;
+	stroke: white;
+	stroke-width:20;
+	stroke-miterlimit:10;
+
+  -webkit-transition: stroke 0.5s ease-out;
+	-moz-transition: stroke 0.5s ease-out;
+	-o-transition: stroke 0.5s ease-out;
+	-ms-transition: stroke 0.5s ease-out;
+	transition: stroke 0.5s ease-out;
 }
 
 .header-logo:hover {
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
-  fill: red;
+	width: 250px;
+	height: auto;
+	fill:none;
+	stroke: #2F72FF;
+	stroke-width:20;
+	stroke-miterlimit:10;cale(1.1);
 }
 
 			/*navbar*/
