@@ -54,9 +54,8 @@ html, body
 ==================================================*/
 
 .header {
-	/*background: url('../images/mesa.jpg');*/
 	background-color: #000000;
-	color: #2F72FF;
+	color: white;
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
@@ -64,6 +63,15 @@ html, body
 	height: 100vh;
 	text-transform: uppercase;
 
+	-webkit-transition: stroke 0.5s ease-out;
+	-moz-transition: stroke 0.5s ease-out;
+	-o-transition: stroke 0.5s ease-out;
+	-ms-transition: stroke 0.5s ease-out;
+	transition: stroke 0.5s ease-out;
+}
+
+.header:hover {
+	color: #2F72FF;
 }
 
 .header-logo {
