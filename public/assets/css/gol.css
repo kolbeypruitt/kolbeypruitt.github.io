@@ -4,6 +4,11 @@ h1 {
   margin: 0px 0px;
 }
 
+h2 {
+  color: white;
+  text-align: left;
+}
+
 body {
   z-index: -50;
   background-image: url("http://wallpapercave.com/wp/afyhOaU.jpg");
@@ -127,4 +132,13 @@ div.row div {
   float: left;
   width: 10px;
   height: 10px;
+}
+
+.patterns {
+  position: absolute;
+  width: 300px;
+}
+
+.patterns img {
+  margin-right: 25px;
 }

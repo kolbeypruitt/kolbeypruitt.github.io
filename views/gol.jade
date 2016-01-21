@@ -33,9 +33,6 @@ html(lang='en')
             option(value='45') 45
             option(value='50') 50
             option(value='55' selected) 55
-            option(value='60') 60
-            option(value='65') 65
-            option(value='70') 70
           section.border
             button(onclick='initiateGridSize()') Generate Grid
         #pauseOrPlay.button(onclick='game.pauseOrPlay();') Start
@@ -50,6 +47,18 @@ html(lang='en')
           #pickerDiv.button cell color
           #gridColor.button toggle grid color
         // <div class="button" id="pickerDiv">select a color</div>
+      .patterns
+        h2 Interesting Patterns to try..
+        div
+          img(id="pattern1" src="assets/images/pattern1.png")
+          br
+          label Adam & Eve
+        br
+        br
+        div
+          img(id="pattern1" src="assets/images/pattern2.png")
+          br
+          label Acorn
       #grid
         // this is where all the cells will go
     input#color_input.field(type='color', name='color_picker', value='#ff0000')
