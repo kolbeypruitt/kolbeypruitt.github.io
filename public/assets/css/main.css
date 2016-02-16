@@ -273,8 +273,8 @@ section#portfolio {
 }
 
 img.port-item {
-	width: 100%;
-	height: 252px;
+	height: 242px;
+	width: auto;
 	transition: all .6s ease-in-out;
 }
 
