@@ -280,6 +280,7 @@ img.port-item {
 
 .portfolio-img {
 	height: 220px;
+	width: auto;
 	overflow: hidden;
 	text-align: center;
 }
@@ -292,10 +293,6 @@ img.port-item {
 	height: 60%;
 	transition: all .6s ease-in-out;
 	background: rgba(0, 0, 0, 0.5);
-}
-
-.plus{
-	display: none;
 }
 
 .portfolio-img:hover .plus{
