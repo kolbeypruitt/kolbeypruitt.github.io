@@ -273,13 +273,13 @@ section#portfolio {
 }
 
 img.port-item {
-	height: 242px;
-	width: auto;
+	width: 350px;
+	height: auto;
 	transition: all .6s ease-in-out;
 }
 
 .portfolio-img {
-	height: 310px;
+	height: 220px;
 	overflow: hidden;
 	text-align: center;
 }
@@ -289,7 +289,7 @@ img.port-item {
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 60%;	
+	height: 60%;
 	transition: all .6s ease-in-out;
 	background: rgba(0, 0, 0, 0.5);
 }
