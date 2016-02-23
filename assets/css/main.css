@@ -81,7 +81,6 @@ html, body
 	stroke: white;
 	stroke-width:20;
 	stroke-miterlimit:10;
-
   -webkit-transition: stroke 0.5s ease-out;
 	-moz-transition: stroke 0.5s ease-out;
 	-o-transition: stroke 0.5s ease-out;
@@ -532,3 +531,89 @@ a .rss:hover{
 		max-height: 627px;
 	}
 }
+
+
+
+
+
+.containr {
+  width: 150px;
+  height: 47px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -24px 0px 0px -75px;
+}
+
+.logo {
+  background: url("../images/kp_site_logo.svg") no-repeat 0px 0px;
+  width: 38px;
+  height: 47px;
+  position: absolute;
+  left: 50%;
+  margin-left: -19px;
+  transition: left 0.5s ease-in-out;
+  cursor: pointer;
+}
+.logo:after {
+  content: "";
+  display: block;
+  background: url("../images/kp_site_logo.svg") no-repeat 0px 0px;
+  width: 102px;
+  height: 47px;
+  position: fixed;
+  left: 50%;
+  opacity: 0;
+  margin: 10px 0px 0px -45px;
+  transition: opacity 0.5s ease-in-out 0s;
+}
+.logo:hover {
+  left: 0%;
+}
+.logo:hover:after {
+  opacity: 1;
+}
+
+
+/*This is for the aboutMeScroller*/
+.wrapper {
+  width: 600px;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.roles {
+    font-size: 30px;
+    height: 50px;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+.roles div {
+    height: 50px;
+    transition: margin-top 1s ease-in-out;
+}
+/*This is for the aboutMeScroller*/
+
+
+/*This is for the randomCharTextEffect*/
+#container .effect-text-container
+{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -31px;
+	margin-top: -10px;
+}
+
+#container .effect-text-container h1
+{
+	font-family: "Open Sans";
+	font-weight: 900;
+	font-size: 15px;
+	letter-spacing: 5px;
+	color: white;
+	display: table-cell;
+}
+/*This is for the randomCharTextEffect*/
