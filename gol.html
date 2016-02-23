@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Conway's Game Of Life</title>
+    <link type="text/css" rel="stylesheet" href="assets/css/gol.css">
+  </head>
+  <body>
+    <h1>Conway's Game Of Life</h1>
+    <div id="container" class="container">
+      <div id="controls" class="controls">
+        <div id="grid_size" class="grid_size">
+          <p>please select the grid size you would like:</p>
+          <label for="height">height</label>
+          <select id="height" name="height" value="undefined">
+            <option value="10">10</option>
+            <option value="15">15</option>
+            <option value="20">20</option>
+            <option value="25">25</option>
+            <option value="30">30</option>
+            <option value="35">35</option>
+            <option value="40" selected>40</option>
+            <option value="45">45</option>
+            <option value="50">50</option>
+          </select>
+          <label for="width">width</label>
+          <select id="width" name="width" value="undefined">
+            <option value="10">10</option>
+            <option value="15">15</option>
+            <option value="20">20</option>
+            <option value="25">25</option>
+            <option value="30">30</option>
+            <option value="35">35</option>
+            <option value="40">40</option>
+            <option value="45">45</option>
+            <option value="50">50</option>
+            <option value="55" selected>55</option>
+          </select>
+          <section class="border">
+            <button onclick="initiateGridSize()">Generate Grid</button>
+          </section>
+        </div>
+        <div id="pauseOrPlay" onclick="game.pauseOrPlay();" class="button">Start</div>
+        <!-- <div class="button" onclick="game.pause();">Pause</div>-->
+        <div onclick="game.clear()" class="button">Clear</div>
+        <div class="button">
+          <label>Fast
+            <input id="speed" type="range" min="0" max="3000" onchange="game.changeSpeed()">Slow
+          </label>
+        </div>
+        <div class="colorPickerWrapper">
+          <div id="pickerDiv" class="button">cell color</div>
+          <div id="gridColor" class="button">toggle grid color</div>
+        </div>
+        <!-- <div class="button" id="pickerDiv">select a color</div>-->
+      </div>
+      <div class="patterns">
+        <h2>Interesting Patterns to try..</h2>
+        <div><img id="pattern1" src="assets/images/pattern1.png"><br>
+          <label>Adam & Eve</label>
+        </div><br><br>
+        <div><img id="pattern1" src="assets/images/pattern2.png"><br>
+          <label>Acorn</label>
+        </div>
+      </div>
+      <div id="grid">
+        <!-- this is where all the cells will go-->
+      </div>
+    </div>
+    <input id="color_input" type="color" name="color_picker" value="#ff0000" class="field">
+    <script type="text/javascript" src="assets/js/gol.js"></script>
+  </body>
+</html>
