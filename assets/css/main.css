@@ -549,7 +549,7 @@ a .rss:hover{
 }
 
 .roles div {
-    height: 50px;
-    transition: margin-top 1s ease-in-out;
+  height: 50px;
+  transition: margin-top 1s ease-in-out;
 }
 /*This is for the aboutMeScroller*/
