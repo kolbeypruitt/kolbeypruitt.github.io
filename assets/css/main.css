@@ -94,7 +94,8 @@ html, body
 	fill:none;
 	stroke: #2F72FF;
 	stroke-width:20;
-	stroke-miterlimit:10;cale(1.1);
+	stroke-miterlimit:10;
+	cale(1.1);
 }
 
 			/*navbar*/
