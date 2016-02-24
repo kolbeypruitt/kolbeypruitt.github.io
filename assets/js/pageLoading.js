@@ -17,9 +17,12 @@
       if(c===tot) return doneLoading();
     }
     function doneLoading(){
+
       ovrl.style.opacity = 0;
       setTimeout(function(){ 
         ovrl.style.display = "none";
+        startBrandEffect();
+        startAboutMeScroller();
       }, 1200);
     }
     for(var i=0; i<tot; i++) {

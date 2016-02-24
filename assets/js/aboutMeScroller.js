@@ -1,4 +1,4 @@
-$(document).ready(function () {
+function startAboutMeScroller() {
   setInterval(function() {
     var current = 1; //keeps track of the current div
     var height = $('.roles').height(); //the height of the roles div
@@ -13,4 +13,4 @@ $(document).ready(function () {
         } else current++;
     }, 2000);
   }, 2000)
-});
+};
