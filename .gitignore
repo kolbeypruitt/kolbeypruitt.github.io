@@ -31,3 +31,6 @@ node_modules
 
 # Debug log from npm
 npm-debug.log
+
+# images are on at https://s3-us-west-2.amazonaws.com/kolbeypruitt.com/img/
+images
