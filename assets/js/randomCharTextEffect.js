@@ -6,27 +6,25 @@
 
 $(document).ready(documentReady);
 
-function documentReady()
-{
+function documentReady() {
 
-  var characterCollection   = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "R", "S", "T", "U", "V", "Y", "Z"];
+  var characterCollection = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "R", "S", "T", "U", "V", "Y", "Z"];
 
-  var currentText       = $(".effect-text-container").text();
+  var currentText = $(".effect-text-container").text();
 
-  var currentTextCollection   = new Array();
+  var currentTextCollection = new Array();
 
-  var characterCount      = 0;
+  var characterCount = 0;
 
-  var characterSpeed      = 500;
+  var characterSpeed = 500;
 
   pushCurrentTextChrachters();
 
-  function pushCurrentTextChrachters () {
+  function pushCurrentTextChrachters() {
 
-    for(var i = 0; i < currentText.length; i++)
-    {
+    for (var i = 0; i < currentText.length; i++) {
 
-      var currentCharacter = currentText.slice(i, i+1);
+      var currentCharacter = currentText.slice(i, i + 1);
 
       currentTextCollection.push(currentCharacter);
 
@@ -36,10 +34,9 @@ function documentReady()
 
   var characterCountIncreaseInterval = setInterval(characterCountIncrease, characterSpeed);
 
-  function characterCountIncrease () {
+  function characterCountIncrease() {
 
-    if (characterCount == currentTextCollection.length)
-    {
+    if (characterCount == currentTextCollection.length) {
 
       clearInterval(characterCountIncreaseInterval);
 
@@ -51,51 +48,32 @@ function documentReady()
 
   }
 
-  function getRandomText () {
+  function getRandomText() {
 
     var result = "";
 
-    if(characterCount == 0)
-    {
+    if (characterCount == 0) {
 
-      for(var i = 0; i < currentTextCollection.length; i++)
-      {
+      for (var i = 0; i < currentTextCollection.length; i++) {
 
-        var randomCharacter = characterCollection[ Math.floor( Math.random() * characterCollection.length ) ];
+        var randomCharacter = characterCollection[Math.floor(Math.random() * characterCollection.length)];
 
         result += randomCharacter;
 
       }
 
-    }
-    else
-    {
-
+    } else {
       result = currentText.slice(0, characterCount);
-
-      for(var i = 0; i < currentTextCollection.length - characterCount; i++)
-      {
-
-        var randomCharacter = characterCollection[ Math.floor( Math.random() * characterCollection.length ) ];
-
+      for (var i = 0; i < currentTextCollection.length - characterCount; i++) {
+        var randomCharacter = characterCollection[Math.floor(Math.random() * characterCollection.length)];
         result += randomCharacter;
-
       }
-
     }
-
     return result;
-
   }
-
   var setRandomTextInterval = setInterval(setRandomText, 50);
 
-  function setRandomText () {
-
-    console.log(getRandomText());
-
+  function setRandomText() {
     $(".effect-text-container").text(getRandomText());
-
   }
-
 }
