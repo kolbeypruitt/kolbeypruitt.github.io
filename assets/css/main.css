@@ -106,6 +106,7 @@ html, body
 	height: auto;
 	font-weight: 200;
 	letter-spacing: 5px;
+	visibility: hidden;
 }
 .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover{
 	color: #6FA2FF;

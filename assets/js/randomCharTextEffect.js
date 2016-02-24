@@ -12,6 +12,8 @@ function startBrandEffect() {
 
   var currentText = $(".effect-text-container").text();
 
+  $(".effect-text-container").attr("style","visibility:visible;");
+
   var currentTextCollection = new Array();
 
   var characterCount = 0;
