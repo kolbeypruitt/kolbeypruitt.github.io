@@ -22,6 +22,7 @@
       document.getElementById('bounce2').className = "transition animation delay";
       
       startBrandEffect()
+      startAboutMeScroller()
 
       ovrl.style.opacity = 0;
       setTimeout(function(){ 
