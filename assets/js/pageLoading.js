@@ -18,6 +18,11 @@
     }
     function doneLoading(){
 
+      document.getElementById('bounce').className = "transition animation";
+      document.getElementById('bounce2').className = "transition animation delay";
+      
+      startBrandEffect()
+
       ovrl.style.opacity = 0;
       setTimeout(function(){ 
         ovrl.style.display = "none";

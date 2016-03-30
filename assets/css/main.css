@@ -722,14 +722,14 @@ img.port-item {
 
 
 
-.con {
+#con {
   position: absolute;
   margin-top: 10%;
   height: 50px;
   width: 120px;
 }
 
-.con2 {
+#con2 {
   position: absolute;
   right: 0;
   margin-top: 10%;
@@ -744,11 +744,11 @@ img.port-item {
 }
 
 @media (max-width: 480px){
-  .con {
+  #con {
     display: none;
   }
 
-  .con2 {
+  #con2 {
     display: none;
   }
 }
