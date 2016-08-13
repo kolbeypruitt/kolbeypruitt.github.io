@@ -6,7 +6,7 @@ html, body
 	color: #6FA2FF;
 }
 .black{
-	color: #313131;
+	color: #999;
 }
 .white{
 	background: white;
@@ -35,7 +35,7 @@ html, body
 	font-size: 14px;
     font-weight: 300;
     margin-bottom: 50px;
-    color: #999;
+    color: white;
     letter-spacing: .39px;
 }
 .underline{
@@ -107,6 +107,7 @@ html, body
 .navbar-fixed-top .navbar-toggle .icon-bar {
     background-color: white;
 }
+
 .navbar-fixed-top .navbar-toggle{
 	border-color: white;
 }
@@ -115,8 +116,15 @@ html, body
     border-color: transparent;
     padding-top: 50px;
 }
+
+.one-page-nav#navigation-bar {
+  background-color: black;
+  padding-top: 10px;
+  border-color: black;
+}
+
 .navbar-default .navbar-nav>li>a{
-	color: white;
+	color: #999;
     /*text-transform: uppercase;*/
     padding-right: 20px;
     padding-left: 20px;
@@ -144,8 +152,8 @@ html, body
 }
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
     background-color: transparent;
-    border: 1px solid black;
-    color: #00000;
+    border: 1px solid #2F72FF;
+    color: #fff;
 }
 		/*Home*/
 .header-wrapper{
