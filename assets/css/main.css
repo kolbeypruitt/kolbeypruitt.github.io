@@ -16,7 +16,7 @@ html, body
 }
 .section-wrapper{
 	padding-top: 90px;
-	padding-bottom: 80px;
+	padding-bottom: 100px;
 }
 .section-title{
 	font-size: 30px;
@@ -528,7 +528,7 @@ a .rss:hover{
 	.quote{
 		padding: 0 15px;
 	}
-} 
+}
 @media (max-width: 480px){
 	.header-table{
 		max-height: 627px;
