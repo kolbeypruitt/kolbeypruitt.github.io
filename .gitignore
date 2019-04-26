@@ -35,3 +35,5 @@ npm-debug.log
 # images are on at https://s3-us-west-2.amazonaws.com/kolbeypruitt.com/img/
 images
 images_lossy_compression
+
+*.DS_Store
