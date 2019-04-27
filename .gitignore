@@ -36,4 +36,4 @@ npm-debug.log
 images
 images_lossy_compression
 
-*.DS_Store
+**/.DS_Store

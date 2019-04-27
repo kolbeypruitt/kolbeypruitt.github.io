@@ -842,7 +842,7 @@ img.port-item {
   animation-delay: 1s;
 }
 
-/* 
+
 .skills,
 .skills .skill,
 .skills .skill .skill-title,
@@ -899,5 +899,5 @@ img.port-item {
    font-size: 14px;
    color: #1D91F2;
    font-weight: 400;
-   top: -13px;
-} */
+   top: -16px;
+}
