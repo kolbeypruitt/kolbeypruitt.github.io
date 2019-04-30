@@ -34,7 +34,7 @@ html, body
 .section-item-detail{
 	font-size: 14px;
     font-weight: 300;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
     color: white;
     letter-spacing: .39px;
 }
@@ -840,64 +840,4 @@ img.port-item {
 .delay {
   -webkit-animation-delay: 1s;
   animation-delay: 1s;
-}
-
-
-.skills,
-.skills .skill,
-.skills .skill .skill-title,
-.skills .skill .skill-bar {
-   width: 100%;
-   float: left;
-}
-
-.skills {
-   padding:15px;
-}
-
-.skills .skill {
-   margin-bottom: 30px;
-}
-
-.skills .skill .skill-title {
-   color: #808080;
-   margin-bottom: 10px;
-   font-weight: 400;
-   font-size: 14px;
-}
-
-.skills .skill .skill-bar {
-   width: 0;
-   height: 6px;
-   background: #f0f0f0;
-   transition: 1s cubic-bezier(1, 0, .5, 1);
-   -webkit-transition: 1s cubic-bezier(1, 0, .5, 1);
-   -ms-transition: 1s cubic-bezier(1, 0, .5, 1);
-}
-
-.skills.active .skill .skill-bar {
-   width: 100%;
-}
-
-.skills .skill .skill-bar span {
-   float: left;
-   width: 0%;
-   background: #1D91F2;
-   height: 6px;
-   position: relative;
-   transition: 1s cubic-bezier(1, 0, .5, 1);
-   -webkit-transition: 1s cubic-bezier(1, 0, .5, 1);
-   -ms-transition: 1s cubic-bezier(1, 0, .5, 1);
-}
-
-.skills .skill .skill-bar span b {
-   float: left;
-   width: 100%;
-   position: relative;
-   text-align: right;
-   opacity: 0;
-   font-size: 14px;
-   color: #1D91F2;
-   font-weight: 400;
-   top: -16px;
 }
