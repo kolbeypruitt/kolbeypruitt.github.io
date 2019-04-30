@@ -4,7 +4,7 @@
     www.yasinkalkan.com
 */
 
-// $(document).ready(startBrandEffect);
+$(document).ready(startBrandEffect);
 
 function startBrandEffect() {
 

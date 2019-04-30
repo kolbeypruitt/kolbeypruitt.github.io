@@ -521,9 +521,9 @@ a .rss:hover{
 	.navbar-default .navbar-brand{
 		margin-left: 15px;
 	}
-		img.about-img {
-	    width: 100%;
-	    padding: 15px 15px 0px;
+	img.about-img {
+		width: 100%;
+		padding: 15px 15px 0px;
 	}
 	.quote{
 		padding: 0 15px;
@@ -608,7 +608,7 @@ a .rss:hover{
 	transform: translateY(50%);
 	/*position: absolute;*/
 	/*padding-left: 40px;*/
-    /*line-height: 22px;*/
+		/*line-height: 22px;*/
 }
 .section-item-title, .section-item-detail{
 	text-align: center;
@@ -626,6 +626,10 @@ a .rss:hover{
 }
 .team-img{
 	width: 100%;
+}
+img.about-img {
+	width: 100%;
+	padding: 15px 15px 0px;
 }
 .team-item-name{
 	font-size: 14px;

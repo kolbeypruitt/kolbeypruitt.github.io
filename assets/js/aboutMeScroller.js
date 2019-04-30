@@ -1,3 +1,5 @@
+$(document).ready(startAboutMeScroller);
+
 function startAboutMeScroller() {
   setInterval(function() {
     var current = 1; //keeps track of the current div
